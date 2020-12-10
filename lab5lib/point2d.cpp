@@ -1,13 +1,9 @@
 #include "point2d.h"
 
 
-Point2d::Point2d() {
-	x = 0.0;
-	y = 0.0;
+Point2d::Point2d() : x(0.0), y(0.0) {
 }
-Point2d::Point2d(float newX, float newY) {
-	x = newX;
-	y = newY;
+Point2d::Point2d(float newX, float newY) : x(newX), y(newY) {
 }
 Point2d::Point2d(const Point2d& cpy) {
 	x = cpy.x;
@@ -35,6 +31,20 @@ bool Point2d::operator!=(const Point2d& otherPoint) {
 	return !(x == otherPoint.x && y == otherPoint.y);
 }
 
+float Point2d::get_x() {
+	return x;
+}
+float Point2d::get_y() {
+	return y;
+}
+float Point2d::set_x(float x) {
+	this->x = x;
+	return this->x;
+}
+float Point2d::set_y(float y) {
+	this->y = y;
+	return this->y;
+}
 double Point2d::len_to(const Point2d& otherPoint) {
 	double lenX = (double)otherPoint.x - x;
 	double lenY = (double)otherPoint.y - y;
