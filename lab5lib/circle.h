@@ -5,7 +5,7 @@ public:
 
 	Circle(Point2d, unsigned int*, float);
 
-	void render();
+	void render(SDL_Renderer* renderer);
 private:
 	float rad;
 };

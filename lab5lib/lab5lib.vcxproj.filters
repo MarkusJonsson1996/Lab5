@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="point2d.h">
+    <ClInclude Include="circle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="shape.h">
+    <ClInclude Include="point2d.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="rectangle.h">
@@ -27,24 +27,24 @@
     <ClInclude Include="triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="circle.h">
+    <ClInclude Include="shape.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="point2d.cpp">
+    <ClCompile Include="circle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="shape.cpp">
+    <ClCompile Include="point2d.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="triangle.cpp">
+    <ClCompile Include="shape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="circle.cpp">
+    <ClCompile Include="triangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

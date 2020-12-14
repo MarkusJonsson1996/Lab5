@@ -4,8 +4,8 @@ Circle::Circle(Point2d pos, unsigned int* colorAlpha, float rad) : Shape(pos, co
 
 }
 
-void Circle::render() {
+void Circle::render(SDL_Renderer* renderer) {
 	cout << "Rendering Circle:" << endl;
 	cout << "\tRadius: " << this->rad << endl;
-	cout << "\tPosition: " << this->get_pos() << endl;
+	cout << "\tPosition: " << this->get_string_pos() << endl;
 }

@@ -10,9 +10,13 @@ Shape::Shape(Point2d pos, unsigned int* colorAlpha) : pos(pos) {
 	}
 }
 
-string Shape::get_pos() {
+
+string Shape::get_string_pos() {
 	return pos.to_string();
 }
-void Shape::render() {
+Point2d Shape::get_pos() {
+	return pos;
+}
+void Shape::render(SDL_Renderer* renderer) {
 	cout << "Rendering shape" << endl;
 }
