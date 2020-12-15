@@ -19,15 +19,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="circle.cpp" />
     <ClCompile Include="lab5.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Markus\source\repos\MarkusJonsson1996\Lab5\lab5lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Markus\source\repos\MarkusJonsson1996\Lab5\lab5lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="point2d.cpp" />
+    <ClCompile Include="rectangle.cpp" />
+    <ClCompile Include="shape.cpp" />
+    <ClCompile Include="triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\lab5lib\lab5lib.vcxproj">
-      <Project>{669da37d-a169-4694-b755-fbb147492372}</Project>
-    </ProjectReference>
+    <ClInclude Include="circle.h" />
+    <ClInclude Include="point2d.h" />
+    <ClInclude Include="rectangle.h" />
+    <ClInclude Include="shape.h" />
+    <ClInclude Include="triangle.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -127,7 +134,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Markus\source\repos\MarkusJonsson1996\Lab5\lab5lib;C:\Users\Markus\source\repos\MarkusJonsson1996\Lab5\SDL2-2.0.12\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Markus\source\repos\MarkusJonsson1996\Lab5\SDL2-2.0.12\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,7 +151,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Markus\source\repos\MarkusJonsson1996\Lab5\lab5lib;C:\Users\Markus\source\repos\MarkusJonsson1996\Lab5\SDL2-2.0.12\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Markus\source\repos\MarkusJonsson1996\Lab5\SDL2-2.0.12\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
