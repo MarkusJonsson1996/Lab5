@@ -1,13 +1,16 @@
 #include "rectangle.h"
 
-Rectangle::Rectangle(Point2d pos, unsigned int* colorAlpha, float height, float witdh): Shape (pos, colorAlpha), width(witdh), height(height) {
+Rectangle::Rectangle(Point2d pos, uint8_t* colorAlpha, float height, float witdh): Shape (pos, colorAlpha), width(witdh), height(height) {
 }
 
 void Rectangle::render(SDL_Renderer* renderer) {
-	cout << "Rendering rectangle: " << endl;
-	cout << "\tWidth: " << this->width << endl;
-	cout << "\tHeight: " << this->height << endl;
-	cout << "\tPosition " << this->get_string_pos() << endl;
+
+	SDL_SetRenderDrawColor(renderer, 
+		this->get_color_alpha(0), 
+		this->get_color_alpha(1), 
+		this->get_color_alpha(2),
+		this->get_color_alpha(3)
+	);
 
 	SDL_RenderDrawLine(renderer,
 		(int)this->get_pos().get_x(),

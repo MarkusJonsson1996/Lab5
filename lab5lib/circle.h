@@ -3,7 +3,7 @@
 class Circle : public Shape {
 public:
 
-	Circle(Point2d, unsigned int*, float);
+	Circle(Point2d, uint8_t*, float rad);
 
 	void render(SDL_Renderer* renderer);
 private:
